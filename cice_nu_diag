@@ -1,0 +1,416 @@
+ --------------------------------
+   CICE model diagnostic output  
+ --------------------------------
+  
+ WARNING: runtype, restart, ice_ic are inconsistent:
+ initial T default
+ WARNING: Need ice_ic = <filename>.
+ WARNING: Initializing using ice_ic conditions
+  Document ice_in namelist parameters:
+  ==================================== 
+  
+  runtype                   =  initial
+  days_per_year             =      360
+  use_leap_years            =        F
+  year_init                 =     1993
+  istep0                    =      384
+  dt                        =     3600.00
+  npt                       =    34680
+  diagfreq                  =       24
+  print_global              =        F
+  print_points              =        T
+  bfbflag                   =        F
+  histfreq                  =        m     d     x     x     x
+  histfreq_n                =        1     1     2     1     1
+  hist_avg                  =        T
+  history_dir               = 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/history/
+  history_file              = iceh
+ Initial condition will be written in 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/history/
+  dumpfreq                  =        d
+  dumpfreq_n                =       30
+  dump_last                 =        F
+  restart                   =        F
+  restart_dir               = 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/restart/
+  restart_ext               =  F
+  restart_format            = nc
+  lcdf64                    =  F
+  restart_file              = iced
+  pointer_file              = 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/restart/ice.restart_file
+  use_restart_time          =  F
+  ice_ic                    = default
+  grid_type                 = rectangular
+  grid_file                 = 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/cice.grid.nc
+  gridcpl_file              = unknown_gridcpl_file
+  kmt_file                  = 
+ /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arct
+ ic-20km/cice/rundir/cice.kmt.nc
+  kitd                      =        1
+  kcatbound                 =        0
+  kdyn                      =        1
+  ndtd                      =        1
+  ndte                      =      120
+  revised_evp               =        T
+  yield_curve               = ellipse
+  kstrength                 =        1
+  krdg_partic               =        1
+  krdg_redist               =        1
+  mu_rdg                    =        3.00
+  Cf                        =       17.00
+  advection                 =    remap
+  shortwave                 =     dEdd
+  R_ice                     =        0.00
+  R_pnd                     =        0.00
+  R_snw                     =        1.50
+  dT_mlt                    =        1.50
+  rsnw_mlt                  =     1500.00
+  kalg                      =        0.60
+  hp1                       =        0.01
+  hs0                       =        0.00
+  rfracmin                  =        0.15
+  rfracmax                  =        1.00
+  hs1                       =        0.03
+  dpscale                   =        0.00
+  frzpnd                    =     hlid
+  ktherm                    =        2
+  a_rapid_mode              =    0.000500
+  Rac_rapid_mode            =   10.000000
+  aspect_rapid_mode         =    1.000000
+  dSdt_slow_mode            =   -0.000000
+  phi_c_slow_mode           =    0.050000
+  phi_i_mushy               =    0.850000
+  atmbndy                   =  default
+  formdrag                  =        F
+  highfreq                  =        F
+  natmiter                  =        5
+  calc_strair               =        T
+  calc_Tsfc                 =        T
+  fyear_init                =     1993
+  ycycle                    =      100
+  atm_data_type             = metroms
+  atm_data_dir              = atmcice/
+  precip_units              = m_per_12hr
+  update_ocn_f              =        T
+  l_mpond_fresh             =        F
+  ustar_min                 =    0.000500
+  fbot_xfer_type            = constant
+  oceanmixed_ice            =        F
+  tfrz_option               = mushy
+  sss_data_type             = default
+  sst_data_type             = default
+  restore_ice               =        F
+  
+Diagnostic point 1: lat, lon =   90.00    0.00
+Diagnostic point 2: lat, lon =   80.00  -10.00
+  tr_iage                   =        T
+  restart_age               =        F
+  tr_FY                     =        F
+  restart_FY                =        F
+  tr_lvl                    =        T
+  restart_lvl               =        F
+  tr_pond_cesm              =        F
+  restart_pond_cesm         =        F
+  tr_pond_lvl               =        T
+  restart_pond_lvl          =        F
+  tr_pond_topo              =        F
+  restart_pond_topo         =        F
+  tr_aero                   =        F
+  restart_aero              =        F
+  
+                      ntrcr =       22
+  
+                    nt_sice =       10
+                    nt_qice =        2
+                    nt_qsno =        9
+  
+                         nilyr       7
+  
+  
+  tr_brine                  =        F
+  skl_bgc                   =        F
+
+Domain Information
+
+  Horizontal domain: nx =    322
+                     ny =    242
+  No. of categories: nc =      5
+  No. of ice layers: ni =      7
+  No. of snow layers:ns =      1
+  Processors:  total    =      2
+  Processor shape:       square-ice
+  Distribution type:      cartesian
+  Distribution weight:     latitude
+  ew_boundary_type:            open
+  ns_boundary_type:            open
+  maskhalo_dyn          =      T
+  maskhalo_remap        =      T
+  maskhalo_bound        =      T
+  sea_ice_time_bry      =      F
+  max_blocks =                 1
+  Number of ghost cells:       1
+
+ ice_read_global_nc, fid=        65536 , varname = ulat
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    45.1213455200195        89.9205169677734     
+   5311027.66547394     
+ ice_read_global_nc, fid=       131072 , varname = kmt
+ ndim=            2 , nvar=            3
+ Dim name = eta_ha, size =          242
+ Dim name = xi_ha, size =          322
+ min, max, sum =   0.000000000000000E+000   1.00000000000000     
+   48945.0000000000     
+  Processors (X x Y) =    1 x    2
+ ice: total number of blocks is           2
+  Block size:  nx_block =    324
+               ny_block =    123
+Timer  22:  mct_init       0.05 seconds
+ ice_read_nc_xy, fid=       131072 , varname = kmt
+ ndim=            2 , nvar=            3
+ Dim name = eta_ha, size =          242
+ Dim name = xi_ha, size =          322
+  min, max, sum =  0.000000000000000E+000   1.00000000000000     
+   48945.0000000000     
+ ice_read_global_nc2, fid=        65536 , varname = ulat
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    45.1213455200195        89.9205169677734     
+   5311027.66547394     
+ ice_read_global_nc2, fid=        65536 , varname = ulon
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =   -179.962127685547        179.991058349609     
+  -684562.580355877     
+ ice_read_global_nc2, fid=        65536 , varname = angle
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =   -179.541229248047        179.949020385742     
+   2074314.58052661     
+ ice_read_global_nc2, fid=        65536 , varname = HTN
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18307.0332031250        21435.9140625000     
+   1600038796.59766     
+ ice_read_global_nc2, fid=        65536 , varname = HTE
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18303.4687500000        21435.8964843750     
+   1599880294.34570     
+ ice_read_global_nc2, fid=        65536 , varname = dxt
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18297.7832031250        21435.9199218750     
+   1599845048.58008     
+ ice_read_global_nc2, fid=        65536 , varname = dyt
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18297.7851562500        21435.9199218750     
+   1599845078.83789     
+ ice_read_global_nc2, fid=        65536 , varname = dxu
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18312.7226562500        21435.8886718750     
+   1600074020.14453     
+ ice_read_global_nc2, fid=        65536 , varname = dyu
+ ndim=            4 , nvar=           13
+ Dim name = xi_t, size =          322
+ Dim name = eta_t, size =          242
+ Dim name = xi_u, size =          322
+ Dim name = eta_u, size =          242
+ min, max, sum =    18312.7246093750        21435.8886718750     
+   1600074050.21680     
+  
+ min/max ULON:  -179.953155517578        179.988571166992     
+ min/max ULAT:   45.5472259521484        89.9205169677734     
+ min/max TLON:  -179.983093226161        179.957668321204     
+ min/max TLAT:   45.4341435551283        89.9205157177154     
+  
+ The following variables will be written to the history tape: 
+          description                     units             variable  frequency   x
+ grid cell mean ice thickness              m                 hi           m       1
+ grid cell mean snow thickness             m                 hs           m       1
+ snow/ice surface temperature              C                 Tsfc         m       1
+ ice area  (aggregate)                     1                 aice         m       1
+ ice velocity (x)                          m/s               uvel         m       1
+ ice velocity (y)                          m/s               vvel         m       1
+ atm velocity (x)                          m/s               uatm         m       1
+ atm velocity (y)                          m/s               vatm         m       1
+ bulk ice salinity                         ppt               sice         m       1
+ down solar flux                           W/m^2             fswdn        m       1
+ down longwave flux                        W/m^2             flwdn        m       1
+ snowfall rate                             cm/day            snow_ai      m       1
+ rainfall rate                             cm/day            rain_ai      m       1
+ sea surface temperature                   C                 sst          m       1
+ sea surface salinity                      ppt               sss          m       1
+ ocean current (x)                         m/s               uocn         m       1
+ ocean current (y)                         m/s               vocn         m       1
+ freeze/melt potential                     W/m^2             frzmlt       m       1
+ shortwave scaling factor                  1                 fswfac       m       1
+ shortwave absorbed in ice interior        W/m^2             fswint_ai    m       1
+ snow/ice/ocn absorbed solar flux (cpl)    W/m^2             fswabs       m       1
+ snow/ice/ocn absorbed solar flux          W/m^2             fswabs_ai    m       1
+ snow/ice broad band albedo                %                 albsni       m       1
+ latent heat flux                          W/m^2             flat_ai      m       1
+ sensible heat flux                        W/m^2             fsens_ai     m       1
+ upward longwave flux                      W/m^2             flwup_ai     m       1
+ evaporative water flux                    cm/day            evap_ai      m       1
+ air temperature                           C                 Tair         m       1
+ 2m reference temperature                  C                 Tref         m       1
+ 2m reference specific humidity            g/kg              Qref         m       1
+ congelation ice growth                    cm/day            congel       m       1
+ frazil ice growth                         cm/day            frazil       m       1
+ snow-ice formation                        cm/day            snoice       m       1
+ top ice melt                              cm/day            meltt        m       1
+ top snow melt                             cm/day            melts        m       1
+ basal ice melt                            cm/day            meltb        m       1
+ lateral ice melt                          cm/day            meltl        m       1
+ freshwtr flx ice to ocn                   cm/day            fresh_ai     m       1
+ salt flux ice to ocean                    kg/m^2/s          fsalt_ai     m       1
+ heat flux ice to ocean                    W/m^2             fhocn_ai     m       1
+ SW flux thru ice to ocean                 W/m^2             fswthru_ai   m       1
+ atm/ice stress (x)                        N/m^2             strairx      m       1
+ atm/ice stress (y)                        N/m^2             strairy      m       1
+ ocean/ice stress (x)                      N/m^2             strocnx      m       1
+ ocean/ice stress (y)                      N/m^2             strocny      m       1
+ compressive ice strength                  N/m               strength     m       1
+ strain rate (divergence)                  %/day             divu         m       1
+ strain rate (shear)                       %/day             shear        m       1
+ norm. principal stress 1                  1                 sig1         m       1
+ norm. principal stress 2                  1                 sig2         m       1
+ volume tendency thermo                    cm/day            dvidtt       m       1
+ volume tendency dynamics                  cm/day            dvidtd       m       1
+ area tendency thermo                      %/day             daidtt       m       1
+ area tendency dynamics                    %/day             daidtd       m       1
+ age tendency thermo                       day/day           dagedtt      m       1
+ age tendency dynamics                     day/day           dagedtd      m       1
+ melt onset date                           day of year       mlt_onset    m       1
+ freeze onset date                         day of year       frz_onset    m       1
+ internal stress tensor trace              N/m^2             trsig        m       1
+ fraction of time-avg interval that ice i  1                 ice_present  m       1
+ sea ice age                               years             iage         m       1
+ grid cell mean ice thickness              m                 hi_d         d       1
+ grid cell mean snow thickness             m                 hs_d         d       1
+ snow/ice surface temperature              C                 Tsfc_d       d       1
+ ice area  (aggregate)                     1                 aice_d       d       1
+ ice velocity (x)                          m/s               uvel_d       d       1
+ ice velocity (y)                          m/s               vvel_d       d       1
+ bulk ice salinity                         ppt               sice_d       d       1
+ down solar flux                           W/m^2             fswdn_d      d       1
+ down longwave flux                        W/m^2             flwdn_d      d       1
+ snowfall rate                             cm/day            snow_ai_d    d       1
+ sea surface temperature                   C                 sst_d        d       1
+ sea surface salinity                      ppt               sss_d        d       1
+ ocean current (x)                         m/s               uocn_d       d       1
+ ocean current (y)                         m/s               vocn_d       d       1
+ freeze/melt potential                     W/m^2             frzmlt_d     d       1
+ shortwave scaling factor                  1                 fswfac_d     d       1
+ shortwave absorbed in ice interior        W/m^2             fswint_ai_d  d       1
+ snow/ice/ocn absorbed solar flux (cpl)    W/m^2             fswabs_d     d       1
+ snow/ice/ocn absorbed solar flux          W/m^2             fswabs_ai_d  d       1
+ latent heat flux                          W/m^2             flat_ai_d    d       1
+ sensible heat flux                        W/m^2             fsens_ai_d   d       1
+ upward longwave flux                      W/m^2             flwup_ai_d   d       1
+ evaporative water flux                    cm/day            evap_ai_d    d       1
+ congelation ice growth                    cm/day            congel_d     d       1
+ frazil ice growth                         cm/day            frazil_d     d       1
+ snow-ice formation                        cm/day            snoice_d     d       1
+ top ice melt                              cm/day            meltt_d      d       1
+ top snow melt                             cm/day            melts_d      d       1
+ basal ice melt                            cm/day            meltb_d      d       1
+ lateral ice melt                          cm/day            meltl_d      d       1
+ freshwtr flx ice to ocn                   cm/day            fresh_ai_d   d       1
+ salt flux ice to ocean                    kg/m^2/s          fsalt_ai_d   d       1
+ heat flux ice to ocean                    W/m^2             fhocn_ai_d   d       1
+ SW flux thru ice to ocean                 W/m^2             fswthru_ai_d d       1
+ ocean/ice stress (x)                      N/m^2             strocnx_d    d       1
+ ocean/ice stress (y)                      N/m^2             strocny_d    d       1
+ level ice area fraction                   1                 alvl         m       1
+ level ice volume                          m                 vlvl         m       1
+ ridged ice area fraction                  1                 ardg         m       1
+ ridged ice volume                         m                 vrdg         m       1
+ melt pond fraction of sea ice             1                 apond        m       1
+ melt pond fraction of grid cell           1                 apond_ai     m       1
+ mean melt pond depth over sea ice         m                 hpond        m       1
+ mean melt pond depth over grid cell       m                 hpond_ai     m       1
+ mean pond ice thickness over sea ice      m                 ipond        m       1
+ mean pond ice thickness over grid cell    m                 ipond_ai     m       1
+ radiation-effective pond area fraction o  1                 apeff        m       1
+ radiation-effective pond area fraction o  1                 apeff_ai     m       1
+  
+ arlx, brlx   78.1818181818182        2527.41217467972     
+ Se, Sv, xi  0.860000000000000       4.730000000000000E-003
+  5.500000000000000E-003
+ dt  =    3600.00000000000     
+ dte =    30.0000000000000     
+ tdamp =   1296.00000000000     
+  
+ hin_max(n-1) < Cat n < hin_max(n)
+  0.000000000000000E+000  < Cat            1  <   0.644507216819426     
+  0.644507216819426       < Cat            2  <    1.39143349757630     
+   1.39143349757630       < Cat            3  <    2.47017938195989     
+   2.47017938195989       < Cat            4  <    4.56728791885049     
+   4.56728791885049       < Cat            5  <    9.33384181586817     
+  
+  
+istep1:       384    idate:  19930117    sec:         0
+ tracer        index      depend        type has_dependents
+    hi             1           0           1 T
+    hs             2           0           1 T
+ nt_Tsfc           3           0           1 F
+ nt_qice           4           1           2 F
+ nt_qsno          11           2           2 F
+ nt_sice          12           1           2 F
+ nt_iage          19           1           2 F
+ nt_alvl          20           0           1 T
+ nt_vlvl          21           1           2 F
+ nt_apnd          22          20           2 T
+ nt_hpnd          23          22           3 F
+ nt_ipnd          24          22           3 F
+  
+  Find indices of diagnostic points 
+  
+ found point   1
+   lat    lon   TLAT   TLON     i     j   block  task
+  90.0    0.0   89.9  -22.5   211    10     1     1
+  
+ found point   2
+   lat    lon   TLAT   TLON     i     j   block  task
+  80.0  -10.0   80.0  -10.5   163   112     1     0
+  Initial forcing data year =         1993
+  Final   forcing data year =         2092

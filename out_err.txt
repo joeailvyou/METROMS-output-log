@@ -1,0 +1,29 @@
+defined(@array) is deprecated at /opt/gridview//clusquota/lib/perl5/Log/Log4perl/Config.pm line 840.
+	(Maybe you should just omit the defined()?)
+defined(@array) is deprecated at /opt/gridview//clusquota/lib/perl5/Log/Log4perl/Config.pm line 840.
+	(Maybe you should just omit the defined()?)
+forrtl: severe (64): input conversion error, unit 0, file /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/vwind.txt
+Image              PC                Routine            Line        Source             
+libmpi.so.12       00002ABAE9078357  Unknown               Unknown  Unknown
+oceanM             0000000000BA909D  Unknown               Unknown  Unknown
+oceanM             00000000009D221B  Unknown               Unknown  Unknown
+oceanM             00000000009D6416  Unknown               Unknown  Unknown
+oceanM             00000000008F07C1  Unknown               Unknown  Unknown
+oceanM             0000000000407AD9  Unknown               Unknown  Unknown
+oceanM             0000000000406FCE  Unknown               Unknown  Unknown
+libc.so.6          00002ABAE9903C05  Unknown               Unknown  Unknown
+oceanM             0000000000406ED9  Unknown               Unknown  Unknown
+forrtl: severe (64): input conversion error, unit 0, file /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/vwind.txt
+Image              PC                Routine            Line        Source             
+libmpi.so.12       00002AB502FB5357  Unknown               Unknown  Unknown
+oceanM             0000000000BA909D  Unknown               Unknown  Unknown
+oceanM             00000000009D221B  Unknown               Unknown  Unknown
+oceanM             00000000009D6416  Unknown               Unknown  Unknown
+oceanM             00000000008F07C1  Unknown               Unknown  Unknown
+oceanM             0000000000407AD9  Unknown               Unknown  Unknown
+oceanM             0000000000406FCE  Unknown               Unknown  Unknown
+libc.so.6          00002AB503840C05  Unknown               Unknown  Unknown
+oceanM             0000000000406ED9  Unknown               Unknown  Unknown
+real 0.48
+user 5.31
+sys 5.37
