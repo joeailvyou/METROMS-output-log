@@ -1,6 +1,56 @@
  Coupled Input File name = roms.in
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  Model Coupling Parallel Threads:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    Ocean Model MPI nodes:   000 - 023
    CICE Model  MPI nodes:   024 - 025
@@ -10,86 +60,36 @@
    CICE Export: AICE:freshAI:fsaltAI:fhocnAI:fswthruAI:strocnx:strocny
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   I am Ocean node:            0
-  I am Ocean node:            4
-  I am Ocean node:            3
-  I am Ocean node:           19
-  I am Ocean node:           14
-  I am Ocean node:           18
-  I am Ocean node:           21
-  I am Ocean node:           16
-  I am CICE node: calling CICE_INITIALIZE:           24
-  I am Ocean node:            2
 
  Model Input Parameters:  ROMS/TOMS version 3.7  
-                          Tuesday - April 25, 2023 -  4:34:18 PM
+                          Thursday - August 3, 2023 -  3:41:50 PM
  -----------------------------------------------------------------------------
-  I am Ocean node:            5
-  I am Ocean node:            1
-  I am Ocean node:           12
-  I am Ocean node:            8
-  I am Ocean node:            9
-  I am Ocean node:            7
-  I am Ocean node:           11
-  I am Ocean node:           22
-  I am CICE node: calling CICE_INITIALIZE:           25
-  I am Ocean node:           17
-  I am Ocean node:           20
   I am Ocean node:            6
-  I am Ocean node:           10
+  I am Ocean node:            2
+  I am Ocean node:            7
+  I am Ocean node:            1
+  I am Ocean node:            4
+  I am Ocean node:            5
+  I am Ocean node:           12
+  I am Ocean node:           19
+  I am Ocean node:           22
+  I am Ocean node:            3
+  I am Ocean node:            8
+  I am Ocean node:           17
+  I am Ocean node:           13
+  I am Ocean node:           14
+  I am CICE node: calling CICE_INITIALIZE:           24
+  I am Ocean node:           11
+  I am Ocean node:           16
   I am Ocean node:           15
   I am Ocean node:           23
-  I am Ocean node:           13
+  I am CICE node: calling CICE_INITIALIZE:           25
+  I am Ocean node:           18
+  I am Ocean node:           21
+  I am Ocean node:            9
+  I am Ocean node:           10
+  I am Ocean node:           20
  Reading zbgc_nml
 
  ROMS 3.6 - Arctic-20km - Coupled ROMS-CICE
@@ -97,18 +97,18 @@
  Operating system : Linux
  CPU/hardware     : x86_64
  Compiler system  : ifort
- Compiler command : /public/software/mpi/mpich-3.2/bin/mpif90
- Compiler flags   : -xHost  -I/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/roms_src/../MCT/include -I/public/home/JCZ11634027/study/work007_METROMS_v5
+ Compiler command : /public/software/mpi/mpich-3.2/bin/mpifort
+ Compiler flags   : -xHost -g -check bounds -traceback -I/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/roms_src/../MCT/include -I/public/home/JCZ1163
 
  Input Script  : 
 
  SVN Root URL  : https://www.myroms.org/svn/src/trunk
  SVN Revision  : Unversioned directory
 
- Local Root    : /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/roms_src
- Header Dir    : /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/arctic-20km//include
+ Local Root    : /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/roms_src
+ Header Dir    : /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/arctic-20km//include
  Header file   : arctic-20km.h
- Analytical Dir: /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/arctic-20km//include
+ Analytical Dir: /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/arctic-20km//include
 
  Resolution, Grid 01: 0320x0240x035,  Parallel Nodes:  24,  Tiling: 004x006
 
@@ -116,13 +116,13 @@
  Physical Parameters, Grid: 01
  =============================
 
-     104040  ntimes            Number of timesteps for 3-D equations.
+     262800  ntimes            Number of timesteps for 3-D equations.
    1200.000  dt                Timestep size (s) for 3-D equations.
          20  ndtfast           Number of timesteps for 2-D equations between
                                  each 3D timestep.
           1  ERstr             Starting ensemble/perturbation run number.
           1  ERend             Ending ensemble/perturbation run number.
-         -1  nrrec             Number of restart records to read from disk.
+          0  nrrec             Number of restart records to read from disk.
           F  LcycleRST         Switch to recycle time-records in restart file.
        2160  nRST              Number of timesteps between the writing of data
                                  into restart fields.
@@ -161,8 +161,8 @@
  0.0000E+00  rdrg              Linear bottom drag coefficient (m/s).
  3.0000E-03  rdrg2             Quadratic bottom drag coefficient.
  0.0000E+00  Zob               Bottom roughness (m).
- 2.0000E+00  blk_ZQ            Height (m) of surface air humidity measurement.
- 2.0000E+00  blk_ZT            Height (m) of surface air temperature measurement.
+ 1.0000E+01  blk_ZQ            Height (m) of surface air humidity measurement.
+ 1.0000E+01  blk_ZT            Height (m) of surface air temperature measurement.
  1.0000E+01  blk_ZW            Height (m) of surface winds measurement.
           1  lmd_Jwt           Jerlov water type.
           2  Vtransform        S-coordinate transformation equation.
@@ -173,7 +173,7 @@
                                  in vertical coordinate stretching.
    1025.000  rho0              Mean density (kg/m3) for Boussinesq approximation.
       0.000  dstart            Time-stamp assigned to model initialization (days).
-      -1.00  time_ref          Reference time for units attribute (yyyymmdd.dd)
+19930101.00  time_ref          Reference time for units attribute (yyyymmdd.dd)
  1.5000E+01  Tnudg(01)         Nudging/relaxation time scale (days)
                                  for tracer 01: temp
  1.5000E+01  Tnudg(02)         Nudging/relaxation time scale (days)
@@ -228,16 +228,16 @@
 
  Output/Input Files:
 
-             Output Restart File:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_rst.nc
-        Prefix for History Files:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_his
-       Prefix for Averages Files:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_avg
+             Output Restart File:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_rst.nc
+        Prefix for History Files:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_his
+       Prefix for Averages Files:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_avg
         Physical parameters File:  
-                 Input Grid File:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_grd.nc
-    Input Nonlinear Initial File:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_ini.nc
-        Input Sources/Sinks File:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/newA20_rivers_mitya.nc
-           Input Forcing File 01:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_blk.nc
-           Input Forcing File 02:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_frc.nc
-             Input Boundary File:  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_bry.nc
+                 Input Grid File:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_grd.nc
+    Input Nonlinear Initial File:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_ini.nc
+        Input Sources/Sinks File:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/newA20_rivers_mitya.nc
+           Input Forcing File 01:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_blk.nc
+           Input Forcing File 02:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_frc.nc
+             Input Boundary File:  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_bry.nc
 
  Tile partition information for Grid 01:  0320x0240x0035  tiling: 004x006
 
@@ -425,39 +425,34 @@
  UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
  UV_QDRAG            Quadratic bottom stress.
  UV_VIS2             Harmonic mixing of momentum.
- UV_SMAGORINSKY      Smagorinksy-like time-dependent viscosity coefficients.
  VAR_RHO_2D          Variable density barotropic mode.
- VISC_3DCOEF         Horizontal, time-dependent 3D viscosity coefficient.
-
- CHECKADJ - use caution when activating: UV_SMAGORINSKY
-            REASON: stability problems, WARNING.
 
  Process Information:
 
- Node #  0 (pid=  154738) is active.
- Node #  1 (pid=  154739) is active.
- Node #  2 (pid=  154740) is active.
- Node #  3 (pid=  154741) is active.
- Node #  4 (pid=  154742) is active.
- Node #  5 (pid=  154743) is active.
- Node #  6 (pid=  154744) is active.
- Node #  7 (pid=  154745) is active.
- Node #  8 (pid=  154746) is active.
- Node #  9 (pid=  154747) is active.
- Node # 10 (pid=  154748) is active.
- Node # 11 (pid=  154749) is active.
- Node # 12 (pid=  154750) is active.
- Node # 13 (pid=  154751) is active.
- Node # 14 (pid=  154752) is active.
- Node # 15 (pid=  154753) is active.
- Node # 16 (pid=  154754) is active.
- Node # 17 (pid=  154755) is active.
- Node # 18 (pid=  154756) is active.
- Node # 19 (pid=  154757) is active.
- Node # 20 (pid=  154758) is active.
- Node # 21 (pid=  154759) is active.
- Node # 22 (pid=  154760) is active.
- Node # 23 (pid=  154761) is active.
+ Node #  0 (pid=   65334) is active.
+ Node #  4 (pid=   65338) is active.
+ Node #  7 (pid=   65341) is active.
+ Node #  8 (pid=   65342) is active.
+ Node # 13 (pid=   65347) is active.
+ Node # 14 (pid=   65348) is active.
+ Node # 16 (pid=   65350) is active.
+ Node # 11 (pid=   65345) is active.
+ Node #  3 (pid=   65337) is active.
+ Node # 18 (pid=   65352) is active.
+ Node # 19 (pid=   65353) is active.
+ Node # 23 (pid=   65357) is active.
+ Node # 21 (pid=   65355) is active.
+ Node # 22 (pid=   65356) is active.
+ Node # 17 (pid=   65351) is active.
+ Node # 12 (pid=   65346) is active.
+ Node #  1 (pid=   65335) is active.
+ Node #  5 (pid=   65339) is active.
+ Node # 10 (pid=   65344) is active.
+ Node #  9 (pid=   65343) is active.
+ Node # 15 (pid=   65349) is active.
+ Node #  2 (pid=   65336) is active.
+ Node #  6 (pid=   65340) is active.
+ Node # 20 (pid=   65354) is active.
   ROMS Ocean Coupler: MCTWorld_init called
   ROMS Ocean Coupler: calling GlobalSegMap_init
  cice2ocn_AV, Exportlist AICE:freshAI:fsaltAI:fhocnAI:fswthruAI:strocnx:strocny
@@ -515,33 +510,33 @@
 
   1-0.0009651193358779 0.0500000000000000-0.0009651193358779 0.0500000000000000
   2-0.0013488780126037 0.0500482559667939-0.0023139973484816 0.1000482559667939
-  3-0.0011514592651645 0.0501156998674241-0.0034654566136461 0.1501639558342180
-  4-0.0003735756740661 0.0501732728306823-0.0038390322877122 0.2003372286649003
+  3-0.0011514592651644 0.0501156998674241-0.0034654566136460 0.1501639558342180
+  4-0.0003735756740661 0.0501732728306823-0.0038390322877121 0.2003372286649003
   5 0.0009829200513762 0.0501919516143856-0.0028561122363360 0.2505291802792859
-  6 0.0029141799764308 0.0501428056118168 0.0000580677400948 0.3006719858911027
+  6 0.0029141799764308 0.0501428056118168 0.0000580677400949 0.3006719858911027
   7 0.0054132615310267 0.0499970966129953 0.0054713292711215 0.3506690825040980
   8 0.0084687837865132 0.0497264335364439 0.0139401130576347 0.4003955160405419
   9 0.0120633394191050 0.0493029943471183 0.0260034524767397 0.4496985103876602
- 10 0.0161716623600090 0.0486998273761630 0.0421751148367486 0.4983983377638232
+ 10 0.0161716623600090 0.0486998273761630 0.0421751148367487 0.4983983377638232
  11 0.0207585511322367 0.0478912442581626 0.0629336659689854 0.5462895820219857
  12 0.0257765478740990 0.0468533167015507 0.0887102138430844 0.5931428987235364
  13 0.0311633730493853 0.0455644893078458 0.1198735868924697 0.6387073880313822
- 14 0.0368391158442262 0.0440063206553765 0.1567127027366959 0.6827137086867587
- 15 0.0427031802506397 0.0421643648631652 0.1994158829873356 0.7248780735499240
- 16 0.0486309868367616 0.0400292058506332 0.2480468698240972 0.7649072794005571
- 17 0.0544704302037591 0.0375976565087951 0.3025173000278563 0.8025049359093522
- 18 0.0600380921294286 0.0348741349986072 0.3625553921572849 0.8373790709079594
- 19 0.0651152103984763 0.0318722303921358 0.4276706025557612 0.8692513013000951
- 20 0.0694434033194839 0.0286164698722119 0.4971140058752451 0.8978677711723071
- 21 0.0727201499285570 0.0251442997062377 0.5698341558038020 0.9230120708785449
- 22 0.0745940258796570 0.0215082922098099 0.6444281816834591 0.9445203630883547
- 23 0.0746596950216180 0.0177785909158270 0.7190878767050770 0.9622989540041818
- 24 0.0724526566618460 0.0140456061647461 0.7915405333669230 0.9763445601689279
- 25 0.0674437485167026 0.0104229733316538 0.8589842818836255 0.9867675335005818
- 26 0.0590334053485720 0.0070507859058187 0.9180176872321976 0.9938183194064005
- 27 0.0465456732896125 0.0040991156383901 0.9645633605218100 0.9979174350447907
- 28 0.0292219798521905 0.0017718319739095 0.9937853403740006 0.9996892670187002
- 29 0.0062146596259992 0.0003107329813000 0.9999999999999998 1.0000000000000002
+ 14 0.0368391158442262 0.0440063206553765 0.1567127027366959 0.6827137086867586
+ 15 0.0427031802506397 0.0421643648631652 0.1994158829873356 0.7248780735499238
+ 16 0.0486309868367616 0.0400292058506332 0.2480468698240972 0.7649072794005570
+ 17 0.0544704302037592 0.0375976565087951 0.3025173000278564 0.8025049359093521
+ 18 0.0600380921294286 0.0348741349986072 0.3625553921572849 0.8373790709079593
+ 19 0.0651152103984763 0.0318722303921357 0.4276706025557612 0.8692513013000950
+ 20 0.0694434033194839 0.0286164698722119 0.4971140058752452 0.8978677711723069
+ 21 0.0727201499285570 0.0251442997062377 0.5698341558038021 0.9230120708785446
+ 22 0.0745940258796570 0.0215082922098099 0.6444281816834592 0.9445203630883545
+ 23 0.0746596950216180 0.0177785909158270 0.7190878767050772 0.9622989540041815
+ 24 0.0724526566618460 0.0140456061647461 0.7915405333669232 0.9763445601689277
+ 25 0.0674437485167025 0.0104229733316538 0.8589842818836257 0.9867675335005816
+ 26 0.0590334053485720 0.0070507859058187 0.9180176872321977 0.9938183194064003
+ 27 0.0465456732896124 0.0040991156383901 0.9645633605218101 0.9979174350447905
+ 28 0.0292219798521903 0.0017718319739095 0.9937853403740005 0.9996892670187000
+ 29 0.0062146596259994 0.0003107329813000 0.9999999999999999 1.0000000000000000
 
  ndtfast, nfast =   20  29   nfast/ndtfast =  1.45000
 
@@ -566,13 +561,6 @@
  Maximum Coriolis   Courant Number =  1.74532755E-01
 
 
- Minimum horizontal viscosity coefficient =  1.52481531E+02 m2/s
- Maximum horizontal viscosity coefficient =  1.78632669E+02 m2/s
-
- NLM: GET_STATE - Warning - NetCDF global attribute: NLM_LBC
-                  for lateral boundary conditions not checked
-                  in restart file: /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_ini.nc
-
  NLM: GET_STATE - Read state initial conditions,             t =     0 00:00:00
                    (Grid 01, File: roms_ini.nc, Rec=0001, Index=1)
                 - free-surface
@@ -580,6 +568,4 @@
                 - vertically integrated u-momentum component
                    (Min =  0.00000000E+00 Max =  0.00000000E+00)
                 - vertically integrated v-momentum component
-                   (Min =  0.00000000E+00 Max =  0.00000000E+00)
-                - u-momentum component
                    (Min =  0.00000000E+00 Max =  0.00000000E+00)

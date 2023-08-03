@@ -1,42 +1,42 @@
-[2023/04/25 16:34:16] In prologue,JOBID is 74932.TC6000
-[2023/04/25 16:34:16] In prologue,the pbs_server_name is tc6000.
-[2023/04/25 16:34:16] ##########################  Job 74932.TC6000 start to execute pre.sh!   ############################
-[2023/04/25 16:34:16] JOBID is 74932.TC6000
-[2023/04/25 16:34:16] USERNAME is JCZ11634027
-[2023/04/25 16:34:16] RESOURCE is neednodes=1:ppn=26,nodes=1:ppn=26,walltime=500:00:00
-[2023/04/25 16:34:16] QUEUE is low
-[2023/04/25 16:34:16] RESOURCE_NODES is 1:ppn=26
-[2023/04/25 16:34:16] The parameter form pbs RESOURCE_NODES is 1:ppn=26
-[2023/04/25 16:34:16] needNodesElement is 1:ppn=26
-[2023/04/25 16:34:16] [INFO]The GPU request is 0
-[2023/04/25 16:34:16] The parameter form pbs RESOURCE is neednodes=1:ppn=26,nodes=1:ppn=26,walltime=500:00:00
-[2023/04/25 16:34:16] The walltime is 500:00:00
-[2023/04/25 16:34:16] walltimeValue is 500:00:00
+[2023/08/03 15:41:48] In prologue,JOBID is 78881.TC6000
+[2023/08/03 15:41:48] In prologue,the pbs_server_name is tc6000.
+[2023/08/03 15:41:48] ##########################  Job 78881.TC6000 start to execute pre.sh!   ############################
+[2023/08/03 15:41:48] JOBID is 78881.TC6000
+[2023/08/03 15:41:48] USERNAME is JCZ11634027
+[2023/08/03 15:41:48] RESOURCE is neednodes=1:ppn=26,nodes=1:ppn=26,walltime=500:00:00
+[2023/08/03 15:41:48] QUEUE is low
+[2023/08/03 15:41:48] RESOURCE_NODES is 1:ppn=26
+[2023/08/03 15:41:48] The parameter form pbs RESOURCE_NODES is 1:ppn=26
+[2023/08/03 15:41:48] needNodesElement is 1:ppn=26
+[2023/08/03 15:41:48] [INFO]The GPU request is 0
+[2023/08/03 15:41:48] The parameter form pbs RESOURCE is neednodes=1:ppn=26,nodes=1:ppn=26,walltime=500:00:00
+[2023/08/03 15:41:48] The walltime is 500:00:00
+[2023/08/03 15:41:48] walltimeValue is 500:00:00
 500:00:00
-[2023/04/25 16:34:16] walltimeValue include :,walltimeValue is 500:00:00
-[2023/04/25 16:34:16] lenWalltimeArr is 3
-[2023/04/25 16:34:16] hour is 500,min is 0,sec is 0,so all change into second is 1800000
-[2023/04/25 16:34:16] [INFO]The walltime request is 1800000
-[2023/04/25 16:34:17] The storAmountPerDay is 7372800.
-[2023/04/25 16:34:17] The wallTimeDay is 21.
-[2023/04/25 16:34:17] The WALLTIME_RESERVE is 1800000, the GPU_NUM is 0, the queueRate is 1, the GpuUnitPrice is 2.
-[2023/04/25 16:34:17] The need total is (storAmountPerDay*wallTimeDay)+(WALLTIME_RESERVE*GPU_NUM*queueRate*GpuUnitPrice).
-[2023/04/25 16:34:17] The Available is 5618648384, the need total is 154828800.
-[2023/04/25 16:34:17] [INFO]The Available value is enough! Available value is 5618648384,the need total is 154828800.
-[2023/04/25 16:34:17] [INFO]storAmountPerDay is 7372800, wallTimeDay is 21, WALLTIME_RESERVE is 1800000, GPU_NUM is 0, the queueRate is 1, the GpuUnitPrice is 2,so the need total is 154828800
-[2023/04/25 16:34:17] [INFO]prologue success,The GPU num is 0,Don't need to execute gpu greserve.
-[2023/04/25 16:34:18] In epilogue,JOBID is 74932.TC6000
-[2023/04/25 16:34:18] In epilogue,The pbs_server_name is tc6000.
-[2023/04/25 16:34:19] ##########################  Job 74932.TC6000 start to execute post.sh!   ############################
-[2023/04/25 16:34:19] The parameter form pbs RESOURCE_NODES is 1:ppn=26
-[2023/04/25 16:34:19] needNodesElement is 1:ppn=26
-[2023/04/25 16:34:19] [INFO]The GPU uesd is 0
-[2023/04/25 16:34:19] The parameter form pbs RESOURCE_USED is cput=00:00:10,mem=1632kb,vmem=115252kb,walltime=00:00:02
-[2023/04/25 16:34:19] The  walltime is 00:00:02
-[2023/04/25 16:34:19] walltimeValue is 00:00:02
+[2023/08/03 15:41:48] walltimeValue include :,walltimeValue is 500:00:00
+[2023/08/03 15:41:48] lenWalltimeArr is 3
+[2023/08/03 15:41:48] hour is 500,min is 0,sec is 0,so all change into second is 1800000
+[2023/08/03 15:41:48] [INFO]The walltime request is 1800000
+[2023/08/03 15:41:49] The storAmountPerDay is 0.
+[2023/08/03 15:41:49] The wallTimeDay is 21.
+[2023/08/03 15:41:49] The WALLTIME_RESERVE is 1800000, the GPU_NUM is 0, the queueRate is 1, the GpuUnitPrice is 4.
+[2023/08/03 15:41:49] The need total is (storAmountPerDay*wallTimeDay)+(WALLTIME_RESERVE*GPU_NUM*queueRate*GpuUnitPrice).
+[2023/08/03 15:41:49] The Available is 5697472908, the need total is 0.
+[2023/08/03 15:41:49] [INFO]The Available value is enough! Available value is 5697472908,the need total is 0.
+[2023/08/03 15:41:49] [INFO]storAmountPerDay is 0, wallTimeDay is 21, WALLTIME_RESERVE is 1800000, GPU_NUM is 0, the queueRate is 1, the GpuUnitPrice is 4,so the need total is 0
+[2023/08/03 15:41:49] [INFO]prologue success,The GPU num is 0,Don't need to execute gpu greserve.
+[2023/08/03 15:41:50] In epilogue,JOBID is 78881.TC6000
+[2023/08/03 15:41:50] In epilogue,The pbs_server_name is tc6000.
+[2023/08/03 15:41:51] ##########################  Job 78881.TC6000 start to execute post.sh!   ############################
+[2023/08/03 15:41:51] The parameter form pbs RESOURCE_NODES is 1:ppn=26
+[2023/08/03 15:41:51] needNodesElement is 1:ppn=26
+[2023/08/03 15:41:51] [INFO]The GPU uesd is 0
+[2023/08/03 15:41:51] The parameter form pbs RESOURCE_USED is cput=00:00:11,mem=0kb,vmem=0kb,walltime=00:00:02
+[2023/08/03 15:41:51] The  walltime is 00:00:02
+[2023/08/03 15:41:51] walltimeValue is 00:00:02
 00:00:02
-[2023/04/25 16:34:19] walltimeValue include :,walltimeValue is 00:00:02
-[2023/04/25 16:34:19] lenWalltimeArr is 3
-[2023/04/25 16:34:19] hour is 0,min is 0,sec is 2,so all change into second is 2
-[2023/04/25 16:34:19] [INFO]The walltime_uesd is 2
-[2023/04/25 16:34:19] [INFO]epilogue success,The GPU num is 0,Don't need to execute gpu gcharge.
+[2023/08/03 15:41:51] walltimeValue include :,walltimeValue is 00:00:02
+[2023/08/03 15:41:51] lenWalltimeArr is 3
+[2023/08/03 15:41:51] hour is 0,min is 0,sec is 2,so all change into second is 2
+[2023/08/03 15:41:51] [INFO]The walltime_uesd is 2
+[2023/08/03 15:41:51] [INFO]epilogue success,The GPU num is 0,Don't need to execute gpu gcharge.

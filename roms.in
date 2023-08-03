@@ -71,10 +71,11 @@
 
     MyAppCPP = ARCTIC20KM
 
+
 ! Input variable information file name.  This file needs to be processed
 ! first so all information arrays can be initialized properly.
 
-  VARNAME = /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/varinfo.dat
+  VARNAME = /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/varinfo.dat
 
 ! Number of nested grids.
 
@@ -185,7 +186,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
 ! Time-Stepping parameters.
 
-      NTIMES == 104040.0
+      NTIMES == 262800.0
           DT == 1200
      NDTFAST == 20
 
@@ -206,11 +207,11 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
 ! Input/Output parameters.
 
-       NRREC == -1
+       NRREC == 0
    LcycleRST == F
         NRST == 2160
         NSTA == 72
-        NFLT == 299970
+        NFLT == 26280
        NINFO == 3
 
 ! Output history, average, diagnostic files parameters.
@@ -320,8 +321,8 @@ LtracerSponge == F F                            ! temperature, salinity, inert
          Zos == 0.02d0                     ! m
 
 ! Bulk flux measurement heights for atmospheric variables
-      BLK_ZQ == 2.0d0                     ! m
-      BLK_ZT == 2.0d0                     ! m
+      BLK_ZQ == 10.0d0                     ! m
+      BLK_ZT == 10.0d0                     ! m
       BLK_ZW == 10.0d0                     ! m
 
 ! Minimum depth for wetting and drying.
@@ -357,7 +358,7 @@ LtracerSponge == F F                            ! temperature, salinity, inert
 
       DSTART =  0.0d0                      ! days
   TIDE_START =  0.0d0                      ! days
-    TIME_REF =  -1                      ! yyyymmdd.dd
+    TIME_REF =  19930101.00                      ! yyyymmdd.dd
 
 !      DSTART =  8417.0                  ! Use start time equal to tidal reference date
 !   TIDE_START = 8417.0d0                  ! Tides reference
@@ -844,8 +845,8 @@ Dout(iTvdif) == F F                        ! vertical diffusion
 
 ! Input NetCDF file names, [1:Ngrids].
 
-     GRDNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_grd.nc
-     ININAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_ini.nc
+     GRDNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_grd.nc
+     ININAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_ini.nc
      ITLNAME == ocean_itl.nc
      IRPNAME == ocean_irp.nc
      IADNAME == ocean_iad.nc
@@ -864,19 +865,19 @@ Dout(iTvdif) == F F                        ! vertical diffusion
 ! line per entry with a vertical bar (|) symbol after each entry,
 ! except the last one.
 
-      CLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_clm.nc
-      BRYNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_bry.nc
+      CLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_clm.nc
+      BRYNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_bry.nc
 
-!     CLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1993_clm.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1994_clm.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1995_clm.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1996_clm.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1997_clm.nc
-!     BRYNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1993_bry.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1994_bry.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1995_bry.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1996_bry.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ocean_1997_bry.nc
+!     CLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1993_clm.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1994_clm.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1995_clm.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1996_clm.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1997_clm.nc
+!     BRYNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1993_bry.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1994_bry.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1995_bry.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1996_bry.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ocean_1997_bry.nc
 
 ! Input climatology nudging coefficients file name.
 
@@ -884,7 +885,7 @@ Dout(iTvdif) == F F                        ! vertical diffusion
 
 ! Input Sources/Sinks forcing (like river runoff) file name.
 
-     SSFNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/newA20_rivers_mitya.nc
+     SSFNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/newA20_rivers_mitya.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several files names per each nested grid.  For example, the USER may
@@ -898,37 +899,37 @@ Dout(iTvdif) == F F                        ! vertical diffusion
 
     NFFILES == 2                         ! number of forcing files
 
-     FRCNAME ==  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_blk.nc \
-                 /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/atmcice/roms_frc.nc
+     FRCNAME ==  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_blk.nc \
+                 /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/atmcice/roms_frc.nc
 
-!    FRCNAME ==  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/tide.nc  \
-!                /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/AN_1993_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/AN_1994_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/AN_1995_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/AN_1996_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/AN_1997_unlim.nc \ 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/FC_1993_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/FC_1994_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/FC_1995_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/FC_1996_unlim.nc | 
-!/public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/FC_1997_unlim.nc
+!    FRCNAME ==  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/tide.nc  \
+!                /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/AN_1993_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/AN_1994_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/AN_1995_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/AN_1996_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/AN_1997_unlim.nc \ 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/FC_1993_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/FC_1994_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/FC_1995_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/FC_1996_unlim.nc | 
+!/public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/FC_1997_unlim.nc
                 
 
 
 ! Output NetCDF file names, [1:Ngrids].
 
-     DAINAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_dai.nc
-     QCKNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_qck.nc
-     GSTNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_gst.nc
-     RSTNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_rst.nc
-     HISNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_his.nc
-     TLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_tlm.nc
-     TLFNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_tlf.nc
-     ADJNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_adj.nc
-     AVGNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_avg.nc
-     STANAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_sta.nc
-     DIANAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_dia.nc
-     FLTNAME == /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/dir_output/ocean_flt.nc
+     DAINAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_dai.nc
+     QCKNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_qck.nc
+     GSTNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_gst.nc
+     RSTNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_rst.nc
+     HISNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_his.nc
+     TLMNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_tlm.nc
+     TLFNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_tlf.nc
+     ADJNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_adj.nc
+     AVGNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_avg.nc
+     STANAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_sta.nc
+     DIANAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_dia.nc
+     FLTNAME == /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/dir_output/ocean_flt.nc
 
 ! Input ASCII parameter filenames.
 
@@ -938,7 +939,7 @@ Dout(iTvdif) == F F                        ! vertical diffusion
      BPARNAM =  ../External/bio_Fennel.in
      SPARNAM =  ../External/sediment.in
      USRNAME =  ../External/MyFile.dat
-     IPARNAM =  /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ice_in
+     IPARNAM =  /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ice_in
 
 !
 !  GLOSSARY:
@@ -1746,8 +1747,8 @@ TimeInterval = 3600.0
 ! Coupled model standard input file name, [1:Nmodels] KEYWORD entries are
 ! expected with the label code in parenthesis.
 
- INPname(ocean) = /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/roms.in
- INPname(cice)  = /public/home/JCZ11634027/study/work007_METROMS_v5_down/projects_v01/tmpdir/arctic-20km/ice_in
+ INPname(ocean) = /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/roms.in
+ INPname(cice)  = /public/home/JCZ11634027/study/work007_METROMS_v6_github/projects_v02/tmpdir/arctic-20km/ice_in
 
 ! Coupled models variables information file name.
 ! This file gets copied to the bin dir by the build script

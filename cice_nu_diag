@@ -2,10 +2,6 @@
    CICE model diagnostic output  
  --------------------------------
   
- WARNING: runtype, restart, ice_ic are inconsistent:
- initial T default
- WARNING: Need ice_ic = <filename>.
- WARNING: Initializing using ice_ic conditions
   Document ice_in namelist parameters:
   ==================================== 
   
@@ -13,7 +9,7 @@
   days_per_year             =      360
   use_leap_years            =        F
   year_init                 =     1993
-  istep0                    =      384
+  istep0                    =        0
   dt                        =     3600.00
   npt                       =    34680
   diagfreq                  =       24
@@ -176,7 +172,7 @@ Domain Information
  ice: total number of blocks is           2
   Block size:  nx_block =    324
                ny_block =    123
-Timer  22:  mct_init       0.05 seconds
+Timer  22:  mct_init       0.10 seconds
  ice_read_nc_xy, fid=       131072 , varname = kmt
  ndim=            2 , nvar=            3
  Dim name = eta_ha, size =          242
@@ -388,7 +384,7 @@ Timer  22:  mct_init       0.05 seconds
    4.56728791885049       < Cat            5  <    9.33384181586817     
   
   
-istep1:       384    idate:  19930117    sec:         0
+istep1:         0    idate:  19930101    sec:         0
  tracer        index      depend        type has_dependents
     hi             1           0           1 T
     hs             2           0           1 T
@@ -414,3 +410,4 @@ istep1:       384    idate:  19930117    sec:         0
   80.0  -10.0   80.0  -10.5   163   112     1     0
   Initial forcing data year =         1993
   Final   forcing data year =         2092
+  Current forcing data year =         1993

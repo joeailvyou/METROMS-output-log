@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N METROMS_case01
+#PBS -o out_txt.txt
+#PBS -e out_err.txt
+#PBS -l nodes=1:ppn=26
+#PBS -q low
+#PBS -l walltime=500:00:00
+
+num=`cat $PBS_NODEFILE | wc -l`
+
+cd $PBS_O_WORKDIR
+
+#export PYTHONPATH=$PYTHONPATH:/public/home/JCZ11634027/study/work007_METROMS_v5_down/metroms/apps/common/python/
+#python arctic20km.py
+ time -p mpirun -np $num -hostfile $PBS_NODEFILE ./oceanG roms.in > out_log.log
+
+#time -p mpirun -np $num -hostfile $PBS_NODEFILE ./oceanM ocean_zsa_jiao.in > out.log
